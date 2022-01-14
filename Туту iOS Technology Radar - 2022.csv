@@ -1,0 +1,33 @@
+name,ring,quadrant,isNew,description
+CocoaPods,Adopt,Tools,FALSE,
+SPM,Adopt,Tools,FALSE,<p>Новые модули обязаны поддерживать SPM и поды</p>
+fastlane,Adopt,Tools,FALSE,<p>Стандартный CI/CD процесс и управление профилями/сертификатами</p>
+git-lfs,Hold,Tools,FALSE,<p>Использовали для одной зависимости с большим файлом данных</p>
+SwiftLint,Adopt,Tools,FALSE,
+SwiftGen,Adopt,Tools,FALSE,
+SwiftFormat,Trial,Tools,TRUE,<p>Библиотека от Apple. Умеет автоформатировать код</p>
+SnapshotTesting,Adopt,Tools,FALSE,"<p>Используем для тестирования View в изоляции, а также как в комбинации с UI-тестами</p>"
+Figma,Adopt,Tools,FALSE,"<p>Показала себя лучше, чем комбинация Sketch + Zeplin</p>"
+Testflight,Adopt,Platforms,FALSE,
+Jenkins,Hold,Platforms,FALSE,"<p>Хотели пересесть на облачный CI. Выбрали GithubActions из-за тесной интеграции c Github, на котором у нас приватные репозитории</p>"
+Github,Adopt,Platforms,FALSE,
+GithubActions,Adopt,Platforms,FALSE,"<p>Хотели пересесть на облачный CI. Выбрали GithubActions из-за тесной интеграции c Github, на котором у нас приватные репозитории</p>"
+Danger,Adopt,Platforms,TRUE,"<p>Используем для автоматизации на pull-реквестах. Ворнинги на число строк, оформление PR, на новые ворнинги в проекте</p>"
+Swift,Adopt,language-and-frameworks,FALSE,
+SwiftUI,Trial,language-and-frameworks,TRUE,"<p>Попробовали на нескольких периферийных экранах. Для полноценного использования в бою надо или писать костыли, или отказываться от iOS 13 и переходить на SwiftUI 2</p>"
+Objective-C,Hold,language-and-frameworks,FALSE,"<p>Спасибо за все, легенда!</p>"
+RxSwift,Hold,language-and-frameworks,FALSE,<p>Используется во всем проекте на всех слоях. Новые модули пишутся на Combine</p>
+Combine,Adopt,language-and-frameworks,TRUE,<p>Новые модули пишутся на Combine</p>
+RxFeedback,Hold,language-and-frameworks,FALSE,<p>Реализация однонаправленной архитектуры + стейт-машина. Отказались в новых модулях из-за громоздкости зависимости</p>
+Composable Architecture,Adopt,language-and-frameworks,FALSE,<p>Реализация однонапавленной архитектуры. Используем на Presentation-слое уровня одного экрана. Альтернатива VM</p>
+RxTest,Hold,language-and-frameworks,FALSE,<p>Не используем для новых модулей из-за переезда на Combine</p>
+Moya,Adopt,language-and-frameworks,FALSE,<p>Основной фреймворк для сетевых запросов</p>
+Prelude,Hold,language-and-frameworks,TRUE,"<p>Как Overture, но с операторами из Haskell. Отказались в пользу Swift-way решения</p>"
+Overture,Adopt,language-and-frameworks,FALSE,"<p>Используется для специфичных задач, хорошо решаемых в функциональной парадигме: парсеры, обработка нотификаций, сложные конвертеры</p>"
+Storyboard & Xib's,Hold,language-and-frameworks,FALSE,<p>Верстка в коде или на SwiftUI</p>
+Monorepository,Hold,Techniques,TRUE,"<p>Переход с монорепозитория на репозиторий под каждый подпроект. Например: авторизация, выдача, форма поиска и пр.</p>"
+Data-driven View,Adopt,Techniques,FALSE,<p>Интерфейс View – один метод render(with: ViewState)</p>
+Unidirectional Data Flow,Adopt,Techniques,FALSE,
+"MVC, MVP, MVVM, VIPER",Hold,Techniques,FALSE,
+Functional programming,Adopt,Techniques,FALSE,"<p>Используется для специфичных задач, хорошо решаемых в функциональной парадигме: парсеры, обработка нотификаций, сложные конвертеры</p>"
+Test driven development,Adopt,Techniques,FALSE,<p>Используется по желанию</p>
